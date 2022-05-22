@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="da947205-70e9-4fa7-8060-6b6d68b6f4ca" name="my server" url="http://rolevik.site">
+        <fileTransfer rootFolder="/var/www/html" accessType="SFTP" host="185.193.143.35" port="22" sshConfigId="1b9be709-b549-4879-8b05-545bde018a9a" sshConfig="user@185.193.143.35:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автоматический вердикт для анкеты</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="./ckeditor.js"></script>
+    <script src="reviewgenerator.js" type="module"></script>
+</head>
+<body>
+<header class="solid-title">
+    <img class="service-title" src="https://rp-wow.ru/templates/default/images/logo_sl9x.png" alt="Логотип сервера Darkmoon">
+    <h1 class="service-title" id="page-title">Автоматический вердикт для анкеты</h1>
+</header>
+<main>
+    <span id="selectors">
+        <p class="section-title solid-title">Критерии оценки:</p>
+        <div class="inside-content">
+            <label class="selector-label" for="pithiness">Содержательность:</label><input id="pithiness" class="selector" type="number" min="0" max="10" maxlength="2" placeholder="1-10" value="0">
+            <hr>
+            <label class="selector-label" for="literacy">Грамотность:</label><input id="literacy" class="selector" type="number" min="0" max="10" maxlength="2" placeholder="1-10" value="0">
+            <hr>
+            <label class="selector-label" for="consistency">Логичность:</label><input id="consistency" class="selector" type="number" min="0" max="10" maxlength="2" placeholder="1-10" value="0">
+            <hr>
+            <label class="selector-label" for="canonicity">Каноничность:</label><input id="canonicity" class="selector" type="number" min="0" max="10" maxlength="2" placeholder="1-10" value="0">
+            <hr>
+            <label id="total-rate-label" for="total-rate">Оценка: </label><input id="total-rate" disabled="disabled" type="number" min="0" max="10" maxlength="2" placeholder="Нет">
+        </div>
+        <script src="totalcoutner.js"></script>
+    </span>
+    <span id="review-project">
+        <p class="section-title solid-title">Генерация вердикта:</p>
+        <div class="inside-content">
+            <label class="selector-label" for="profile-link">Ссылка на профиль </label><input id="profile-link" class="selector_long" type="text" maxlength="100" placeholder="https://rp-wow.ru/users/1018">
+            <hr>
+            <label class="selector-label" for="discord-link">Discord </label><input id="discord-link" class="selector_long" type="text" maxlength="64" placeholder="rolevik dima#4300">
+            <hr>
+            <label class="selector-label" for="character-name">Имя проверяемого персонажа </label><input id="character-name" class="selector_long" type="text" maxlength="64" placeholder="Васян">
+            <hr>
+            <p id="review">Кликните "Создать вердикт" для обновления вердикта.<br>
+            Чтобы скопировать вердикт на сайт - кликните "HTML-редактор"<br>
+            Скопируйте код и вставьте его в редактор на сайте, испльзуя режим "код"</p>
+            <button id="create-review">Создать вердикт</button>
+            <hr>
+            <div id="review-editor">Здесь появиться проект вердикта</div>
+        </div>
+    </span>
+</main>
+</body>
+</html>
