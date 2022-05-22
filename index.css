@@ -1,23 +1,78 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
-body {
-    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png");
-    max-width: 80%;
-    margin: auto;
+html, body {
+    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
     font-family: 'Arimo', sans-serif;
     overflow: auto;
 }
-header {
+#layout {
+    min-width: 260px;
     margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+header {
     height: 50px;
 }
-main {
-    display: flex;
-}
+
 .solid-title {
     background-color: rgb(91, 62, 93);
 }
+
+
+@media all and (min-width: 1200px) {
+    main {
+        display: inline;
+    }
+    .selector-block {
+        float: left;
+    }
+    #rate-block {
+        width: 24%;
+        margin-right: 1%;
+    }
+    #review-block {
+        margin-left: 1%;
+        width: 74%;
+    }
+    /*.selector-block {*/
+    /*    max-width: 40%;*/
+    /*}*/
+}
+
+
+
+/* АДАПТИВ*/
+
+/*@media screen and (max-width: 320px) {*/
+/*    main {*/
+/*        display: ;*/
+/*    }*/
+/*}*/
+/*ы*/
+
+
+/*.selector-block {*/
+/*    display: inline;*/
+/*}*/
+
+/*#rate-block {*/
+/*    width: 39%;*/
+/*    wi*/
+/*}*/
+
+/*#review-block {*/
+/*    width: 60%;*/
+/*}*/
+
+/*#review-block {*/
+/*    min-width: 20%inline;*/
+/*}*/
+
 
 .section-title {
     padding: 10px;
@@ -26,19 +81,12 @@ main {
     color: rgba(244, 244, 244, 0.95);
 }
 
-#selectors {
-    max-width: 39%;
-    float: left;
-    margin-right: 5px;
-}
+
+
+
 .inside-content {
     padding: 10px;
     background-color: rgb(244, 244, 244, 0.95);
-}
-#review-project {
-
-    float: right;
-    margin-left: 5px;
 }
 .service-title {
     color: rgba(244, 244, 244, 0.95);
@@ -92,6 +140,7 @@ main {
     border-radius: 0.25rem;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+
 #create-review {
     background-color: rgb(91, 62, 93);
     font-style: inherit;
@@ -127,4 +176,15 @@ main {
 
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+@media all and (max-width: 1199px) {
+    .selector, .selector_long, #total-rate {
+        float: none;
+        display: block;
+        width: 100%;
+    }
+    /*.selector-block {*/
+    /*    max-width: 40%;*/
+    /*}*/
 }
