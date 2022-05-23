@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 html, body {
-    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat fixed;
+    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat;
+
     margin: 0;
     padding: 0;
     border: 0;
@@ -11,9 +12,7 @@ html, body {
 }
 #layout {
     min-width: 260px;
-    margin-top: 20px;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 20px 10% 10%;
 }
 header {
     height: 50px;
@@ -23,56 +22,25 @@ header {
     background-color: rgb(91, 62, 93);
 }
 
-
 @media all and (min-width: 1200px) {
     main {
         display: inline;
     }
+
     .selector-block {
         float: left;
     }
+
     #rate-block {
         width: 24%;
         margin-right: 1%;
     }
+
     #review-block {
         margin-left: 1%;
         width: 74%;
     }
-    /*.selector-block {*/
-    /*    max-width: 40%;*/
-    /*}*/
 }
-
-
-
-/* АДАПТИВ*/
-
-/*@media screen and (max-width: 320px) {*/
-/*    main {*/
-/*        display: ;*/
-/*    }*/
-/*}*/
-/*ы*/
-
-
-/*.selector-block {*/
-/*    display: inline;*/
-/*}*/
-
-/*#rate-block {*/
-/*    width: 39%;*/
-/*    wi*/
-/*}*/
-
-/*#review-block {*/
-/*    width: 60%;*/
-/*}*/
-
-/*#review-block {*/
-/*    min-width: 20%inline;*/
-/*}*/
-
 
 .section-title {
     padding: 10px;
@@ -81,55 +49,34 @@ header {
     color: rgba(244, 244, 244, 0.95);
 }
 
-
-
-
 .inside-content {
     padding: 10px;
     background-color: rgb(244, 244, 244, 0.95);
 }
+
 .service-title {
     color: rgba(244, 244, 244, 0.95);
     height: 50px;
     padding-left: 20px;
     display: inline;
     vertical-align: top;
-    /*horiz-align: center;*/
-    /*margin-top: -5px;*/
-    /*position: relative;*/
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-top: 0;
-}
-#page-title {
     font-weight: normal;
-
-    font-style: normal;
     font-size: 20pt;
-    text-align: center;
     line-height: 50px;
-
 }
 
 #total-rate-label {
-    line-height: 40px;
     font-weight: bold;
-
 }
-
 
 .selector-label {
     line-height: 40px;
 }
+
 .selector, #total-rate {
     float: right;
     width: 30%;
-
-    /*height: calc(2.25rem + 2px);*/
     padding: 0.375rem 0.75rem;
-    font-family: inherit;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
@@ -141,50 +88,51 @@ header {
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
+.long-selector {
+    width: 50%;
+}
+
 #create-review {
     background-color: rgb(91, 62, 93);
-    font-style: inherit;
+    font-weight: bold;
     color: rgb(244, 244, 244);
     padding: 10px;
-    justify-content: center;
     margin: auto;
     display: flex;
-    border: 1px solid white;
+    border: 1px solid black;
     border-radius: 0.5rem;
     text-align: center;
 }
 #review {
     text-align: center;
 }
-.selector_long {
 
-    width: 50%;
-    float: right;
-    /*height: calc(2.25rem + 2px);*/
-    padding: 0.375rem 0.75rem;
-    font-family: inherit;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #bdbdbd;
-    border-radius: 0.25rem;
-    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
 
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
 @media all and (max-width: 1199px) {
+    html, body {
+        background-size: auto 100%;
+
+    }
+    #layout {
+        margin: 0 5% 5%;
+    }
+    #page-title {
+        display: none;
+    }
+    header {
+        text-align: center;
+
+    }
+    .service-title {
+        padding-left: 0;
+    }
     .selector, .selector_long, #total-rate {
         float: none;
         display: block;
         width: 100%;
     }
-    /*.selector-block {*/
-    /*    max-width: 40%;*/
-    /*}*/
 }
