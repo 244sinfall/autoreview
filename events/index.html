@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автоматический вердикт для анкеты</title>
+    <link rel="stylesheet" href="../index.css">
+    <script src="../ckeditor.js"></script>
+    <script src="text-cleaner.js" type="module"></script>
+    <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
+</head>
+<body>
+    <div id="layout">
+        <header class="solid-title">
+            <a href="../"><img class="service-title" src="https://rp-wow.ru/templates/default/images/logo_sl9x.png" alt="Логотип сервера Darkmoon"></a>
+            <div class="service-title" id="page-title">
+                <nav class="header-menu">
+                    <a href="../charsheets" class="header-menu header-element">Анкеты</a>
+                    <a href="#" class="header-menu header-element">Отчёты</a>
+                    <a href="#" class="header-menu header-element">Арбитры</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="selector-block" id="clean-names-block">
+                <p class="section-title solid-title">Очистка текста:</p>
+                <div class="inside-content" id="reviewer-cleaner-inside">
+                    <div id="to-clean-editor">Здесь появиться проект вердикта</div>
+                    <button id="clean-text">Очистить</button>
+                    <div id="cleaned-editor">Здесь появиться проект вердикта</div>
+                </div>
+                <script src="../totalcoutner.js"></script>
+            </div>
+<!--            <div class="selector-block" id="review-block">-->
+<!--                <p class="section-title solid-title">Генерация вердикта:</p>-->
+<!--                <div class="inside-content">-->
+<!--                    <label class="selector-label" for="profile-link">Ссылка на профиль </label><input id="profile-link" class="selector long-selector selector-storage" type="text" maxlength="100" placeholder="https://rp-wow.ru/users/1018">-->
+<!--                    <hr>-->
+<!--                    <label class="selector-label" for="discord-link">Discord </label><input id="discord-link" class="selector long-selector selector-storage" type="text" maxlength="64" placeholder="rolevik dima#4300">-->
+<!--                    <hr>-->
+<!--                    <label class="selector-label" for="character-name">Имя проверяемого персонажа </label><input id="character-name" class="selector long-selector" type="text" maxlength="64" placeholder="Васян">-->
+<!--                    <hr>-->
+<!--                    <script src="../storagemanager.js"></script>-->
+<!--                    <p id="review">Кликните "Создать вердикт" для обновления вердикта.<br>-->
+<!--                    Чтобы скопировать вердикт на сайт - кликните "HTML-редактор",-->
+<!--                    скопируйте код и вставьте его в редактор на сайте, испльзуя режим "код"</p>-->
+<!--                    <button id="create-review">Создать вердикт</button>-->
+<!--                    <hr>-->
+<!--                    <div id="review-editor">Здесь появиться проект вердикта</div>-->
+<!--                </div>-->
+<!--            </div>-->
+        </main>
+    </div>
+</body>
+</html>

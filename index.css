@@ -2,8 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
 
 html, body {
-    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat;
-
+    background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,6 +23,7 @@ header {
 }
 
 @media all and (min-width: 1200px) {
+
     main {
         display: inline;
     }
@@ -32,37 +33,79 @@ header {
     }
 
     #rate-block {
-        width: 24%;
-        margin-right: 1%;
+        width: 25%;
+        padding-right: 1%;
     }
 
     #review-block {
-        margin-left: 1%;
-        width: 74%;
+
+        width: 75%;
     }
 }
+/*#clean-names-block {*/
+/*    display: inline-block;*/
 
+/*}*/
+.ck-editor {
+    max-width: 300px;
+}
 .section-title {
     padding: 10px;
     margin-bottom: 0;
     height: 40px;
     color: rgba(244, 244, 244, 0.95);
 }
+#clean-names-block {
+    /*max-width: 100%;*/
+}
+#clean-text {
+    margin: 10px;
+    height: 30px;
+    alignment-baseline: bottom;
+    align-content: baseline;
+}
+#reviewer-cleaner-inside {
+    display: inline-flex;
 
+}
 .inside-content {
+    /*max-width: 100%;*/
     padding: 10px;
     background-color: rgb(244, 244, 244, 0.95);
 }
-
+img.service-title {
+    padding-left: 20px;
+}
 .service-title {
     color: rgba(244, 244, 244, 0.95);
     height: 50px;
-    padding-left: 20px;
-    display: inline;
+    display: inline-block;
     vertical-align: top;
     font-weight: normal;
-    font-size: 20pt;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.header-menu {
+    list-style: none;
+    display: block;
+    float: left;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: auto;
+    height: 50px;
     line-height: 50px;
+}
+.header-element:hover {
+    background-color: #7A537C;
+}
+.header-element {
+    width: 100pt;
+    text-align: center;
+}
+#welcome-block {
+    text-align: center;
 }
 
 #total-rate-label {
@@ -115,6 +158,18 @@ header {
 @media all and (max-width: 1199px) {
     html, body {
         background-size: auto 100%;
+
+    }
+    #reviewer-cleaner-inside {
+        display: block;
+    }
+    .ck-editor {
+        max-width: 100%;
+    }
+    #clean-text {
+        text-align: center;
+        display: flex;
+        margin: 10px auto 10px auto;
 
     }
     #layout {
