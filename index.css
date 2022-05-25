@@ -1,6 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
-
+/*Title + main rules*/
 html, body {
     background: url("https://rp-wow.ru/templates/default/images/bgdarkmoon.png") no-repeat fixed;
     background-size: cover;
@@ -22,52 +22,13 @@ header {
     background-color: rgb(91, 62, 93);
 }
 
-@media all and (min-width: 1200px) {
-
-    main {
-        display: inline;
-    }
-
-    .selector-block {
-        float: left;
-    }
-
-    #rate-block {
-        width: 25%;
-        padding-right: 1%;
-    }
-
-    #review-block {
-
-        width: 75%;
-    }
-}
-/*#clean-names-block {*/
-/*    display: inline-block;*/
-
-/*}*/
-.ck-editor {
-    max-width: 300px;
-}
 .section-title {
     padding: 10px;
     margin-bottom: 0;
     height: 40px;
     color: rgba(244, 244, 244, 0.95);
 }
-#clean-names-block {
-    /*max-width: 100%;*/
-}
-#clean-text {
-    margin: 10px;
-    height: 30px;
-    alignment-baseline: bottom;
-    align-content: baseline;
-}
-#reviewer-cleaner-inside {
-    display: inline-flex;
 
-}
 .inside-content {
     /*max-width: 100%;*/
     padding: 10px;
@@ -76,6 +37,7 @@ header {
 img.service-title {
     padding-left: 20px;
 }
+
 .service-title {
     color: rgba(244, 244, 244, 0.95);
     height: 50px;
@@ -97,6 +59,7 @@ a {
     height: 50px;
     line-height: 50px;
 }
+
 .header-element:hover {
     background-color: #7A537C;
 }
@@ -107,6 +70,11 @@ a {
 #welcome-block {
     text-align: center;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/*Charsheet styles*/
 
 #total-rate-label {
     font-weight: bold;
@@ -150,15 +118,57 @@ a {
     text-align: center;
 }
 
+/*event styles*/
+#reviewer-cleaner-inside .ck-editor {
+    min-width: 150pt;
+    max-width: 150pt;
 
-*, *::before, *::after {
-    box-sizing: border-box;
+
 }
 
+#reviewer-cleaner-inside .ck-editor__editable {
+    max-height: 280pt;
+    min-height: 280pt;
+}
+#clean-text {
+    margin: 10px;
+    height: 30px;
+    background-color: rgb(91, 62, 93);
+    font-weight: bold;
+    color: rgb(244, 244, 244);
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    alignment-baseline: bottom;
+    align-content: baseline;
+}
+#reviewer-cleaner-inside {
+    display: inline-flex;
+
+}
+/*Desktop-Only styles*/
+@media all and (min-width: 1200px) {
+    main {
+        display: inline;
+    }
+
+    .selector-block {
+        float: left;
+    }
+
+    #rate-block {
+        width: 25%;
+        padding-right: 1%;
+    }
+
+    #review-block {
+
+        width: 75%;
+    }
+}
+/*Mobile only styles*/
 @media all and (max-width: 1199px) {
     html, body {
         background-size: auto 100%;
-
     }
     #reviewer-cleaner-inside {
         display: block;

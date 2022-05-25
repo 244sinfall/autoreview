@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Автоматический вердикт для анкеты</title>
     <link rel="stylesheet" href="../index.css">
-    <script src="../ckeditor.js"></script>
-    <script src="../reviewgenerator.js" type="module"></script>
+    <script src="../src/ckeditor.js"></script>
+    <script src="../src/charsheets/reviewgenerator.js" type="module"></script>
     <meta name = "viewport" content = "width=device-width, minimum-scale=1.0, maximum-scale = 1.0, user-scalable = no">
 </head>
 <body>
@@ -34,7 +34,7 @@
                     <hr>
                     <label id="total-rate-label" class="selector-label"  for="total-rate">Оценка: </label><input id="total-rate" disabled="disabled" type="number"  min="0" max="10" maxlength="2" placeholder="Нет">
                 </div>
-                <script src="../totalcoutner.js"></script>
+                <script src="../src/charsheets/totalcoutner.js"></script>
             </div>
             <div class="selector-block" id="review-block">
                 <p class="section-title solid-title">Генерация вердикта:</p>
@@ -45,7 +45,7 @@
                     <hr>
                     <label class="selector-label" for="character-name">Имя проверяемого персонажа </label><input id="character-name" class="selector long-selector" type="text" maxlength="64" placeholder="Васян">
                     <hr>
-                    <script src="../storagemanager.js"></script>
+                    <script src="../src/storagemanager.js"></script>
                     <p id="review">Кликните "Создать вердикт" для обновления вердикта.<br>
                     Чтобы скопировать вердикт на сайт - кликните "HTML-редактор",
                     скопируйте код и вставьте его в редактор на сайте, испльзуя режим "код"</p>
