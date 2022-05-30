@@ -37,7 +37,6 @@ element.addEventListener("click", () => {
     if(cleanedArrayOfLines[participant].endsWith(" M") || cleanedArrayOfLines[participant].endsWith(" MW") || cleanedArrayOfLines[participant].endsWith(" WM")) {
       continue;
     }
-    console.log(cleanedArrayOfLines[participant])
     participantsCount += 1;
   }
   let cleanedParticipants = cleanedArrayOfLines.flatMap((element) => {

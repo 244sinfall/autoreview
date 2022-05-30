@@ -42,15 +42,17 @@ function generateReview() {
     "<hr>";
 
   // Перебор пунктов
+  let rejected = false;
   let selectors = document.getElementsByClassName("selector");
   for (let selector = 0; selector < selectors.length; selector += 1) {
     let rate = parseInt(selectors[selector].value);
     if(rate >= 0 && rate <= 10 && !isNaN(rate)) {
+      if(rate === 0) rejected = true;
       review += getReviewPart(selectors[selector].id, rate);
     }
   }
-  if(totalRate > 0) review += `<p>Оценка:</p><p>${characterName.value} ${totalRate}</p>`;
-  if(totalRate <= 0) review += `<p>В связи с вышеперечисленным, творчество получает вердикт <strong>отказано.</strong></p>`;
+  if(!rejected) review += `<p>Оценка:</p><p>${characterName.value} ${totalRate}</p>`;
+  if(rejected) review += `<p>В связи с вышеперечисленным, творчество получает вердикт <strong>отказано.</strong></p>`;
   review += `<p style=\"text-align: justify;\">Если у Вас остались вопросы, касаемо вынесенного решения, то Вы можете обратиться ко мне в личные сообщения на сайте (${profileLink.value}), в Discord (${discord.value}) для получения ответов на них.
 </p>
 <p style="text-align: justify;">С уважением,

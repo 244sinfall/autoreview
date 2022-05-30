@@ -14,9 +14,9 @@
             <a href="../"><img class="service-title" src="https://rp-wow.ru/templates/default/images/logo_sl9x.png" alt="Логотип сервера Darkmoon"></a>
             <div class="service-title" id="page-title">
                 <nav class="header-menu">
-                    <a href="#" class="header-menu header-element">Анкеты</a>
-                    <a href="../events" class="header-menu header-element">Отчёты</a>
-                    <a href="#" class="header-menu header-element">Арбитры</a>
+                    <a href="/charsheets" class="header-menu header-element">Анкеты</a>
+<!--                    <a href="/events" class="header-menu header-element">Отчёты</a>-->
+<!--                    <a href="#" class="header-menu header-element">Арбитры</a>-->
                 </nav>
             </div>
         </header>
@@ -46,9 +46,16 @@
                     <label class="selector-label" for="character-name">Имя проверяемого персонажа </label><input id="character-name" class="selector long-selector" type="text" maxlength="64" placeholder="Васян">
                     <hr>
                     <script src="../src/storagemanager.js"></script>
-                    <p id="review">Кликните "Создать вердикт" для обновления вердикта.<br>
+
+                        Не забудьте, что вам нужно отредактировать вердикт, приведя примеры и доводы,
+                        отсылаясь к анкете.<br>
+                        В случае генерации вердикта <strong>на одобрение</strong>, вам необходимо будет оставить коментарии в/после фрагментов, выделенных жирным шрифтом.<br>
+                        В случае генерации вердикта <strong>на отказ</strong>, жирным будут выделены причины. Вам нужно дополнить их отсылками к тексту анкеты.<br>
+                        Помните, что пользуясь данным сервисом вы все еще <strong>ответственны</strong> за то, что вердикт действительно отражает достоинства/недостатки творчества.
+
                     Чтобы скопировать вердикт на сайт - кликните "HTML-редактор",
-                    скопируйте код и вставьте его в редактор на сайте, испльзуя режим "код"</p>
+                    скопируйте код и вставьте его в редактор на сайте, испльзуя режим "код"
+                    <p id="review">Кликните "Создать вердикт" для обновления вердикта.<br></p>
                     <button id="create-review">Создать вердикт</button>
                     <hr>
                     <div id="review-editor">Здесь появиться проект вердикта</div>

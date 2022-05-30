@@ -8,8 +8,9 @@ function updateTotalRate() {
     totalRate += value
   }
   totalRate = totalRate / selectors.length;
-  document.getElementById("total-rate").value = Math.round(totalRate);
+  document.getElementById("total-rate").value = Math.floor(totalRate);
 }
+
 
 
 document.getElementById("rate-block").addEventListener("input", (e) => {
